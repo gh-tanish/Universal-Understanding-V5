@@ -1,0 +1,109 @@
+/* ===========================
+   01 — Variables
+   =========================== */
+:root{
+    --bg: #a5a2a2;
+    --text: #ffffff;
+    --nav-bg: #537c85;
+    --nav-link: #ffffff;
+    --nav-link-hover: #a4de92;
+    --header-bg: #729297;
+    --section-bg: #ffffff;
+    --section-text: gray;
+    --card-bg: #aeb4c5;
+    --feature-bg: #a29aba;
+    --footer-bg: #000000;
+}
+
+
+/* ===========================
+   02 — Base / Reset
+   =========================== */
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ===========================
+   03 — Layout
+   =========================== */
+header {
+    background: var(--header-bg);
+    padding: 20px;
+}
+
+section {
+    background: var(--section-bg);
+    color: var(--section-text);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    background: var(--card-bg);
+    margin: auto;
+    width: 200px;
+    padding: 10px;
+}
+
+
+/* ===========================
+   04 — Components
+   =========================== */
+.feature-box div {
+    width: 200px;
+    padding: 10px;
+}
+
+section.feature-box.abc div {
+    background: var(--feature-bg);
+}
+
+
+/* ===========================
+   05 — Nav
+   =========================== */
+nav ul {
+    background: var(--nav-bg);
+    padding: 10px 20px;
+    margin: 0;
+}
+
+nav a {
+    color: var(--nav-link);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--nav-link-hover);
+}
+
+
+/* ===========================
+   06 — Lists & misc
+   =========================== */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+/* ===========================
+   07 — Footer
+   =========================== */
+footer {
+    background: var(--footer-bg);
+    padding: 10px 20px;
+}
