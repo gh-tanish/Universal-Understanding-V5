@@ -4,14 +4,14 @@
 :root{
     --bg: #a5a2a2;
     --text: #ffffff;
-    --nav-bg: #50536d;
+    --nav-bg: #6f808a;
     --nav-link: #ffffff;
-    --nav-link-hover: #af92de;
-    --header-bg: #4b3c69;
+    --nav-link-hover: #a0d2e0;
+    --header-bg: #3c4a69;
     --section-bg: #515151;
     --section-text: gray;
     --card-bg: #aeb4c5;
-    --feature-bg: #a29aba;
+    --feature-bg: #9aa5ba;
     --footer-bg: #000000;
 }
 
@@ -36,20 +36,55 @@ header {
     padding: 20px;
 }
 
+
 section {
     background: var(--section-bg);
     color: var(--section-text);
     padding: 20px;
-    display: flex;
-    flex-direction: row;
 }
 
-div {
-    background: var(--card-bg);
-    margin: auto;
-    width: 200px;
-    padding: 10px;
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: stretch;
 }
+
+.card {
+    background: var(--card-bg);
+    color: var(--text);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px 20px;
+    width: 220px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.card:hover {
+    color: var(--nav-link-hover);
+    background: #fff;
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(80,83,109,0.18);
+}
+
+.card h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.3em;
+}
+
+.card p {
+    margin: 0;
+    color: var(--section-text);
+    font-size: 1em;
+}
+
+
 
 
 /* ===========================
@@ -70,6 +105,7 @@ section.feature-box.abc div {
    =========================== */
 nav ul {
     background: var(--nav-bg);
+    opacity: 75%;
     padding: 10px 20px;
     margin: 0;
 }
